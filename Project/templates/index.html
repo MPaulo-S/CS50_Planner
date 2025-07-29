@@ -1,0 +1,137 @@
+{% extends "layout.html" %}
+
+{% block main %}
+    <h1 data-i18n="tasks:index.title" class="mb-4">Planner</h1>
+
+    <div id="taskTableContainer">
+    <!-- Hide if there are no tasks for user yet -->
+        {% if taskList %}
+            <div class="display-page pt-4 table-responsive">
+                <h2 data-i18n="tasks:index.upcomingItems" class="mb-4 font-red">Upcoming Tasks</h2>
+
+                <table id="taskTable" class="table table-borderless border-0">
+                    <thead>
+                        <tr class="border-bottom">
+                            <th data-i18n="common:complete">Complete</th>
+                            <th data-i18n="tasks:index.items.dueDate">Due Date</th>
+                            <th data-i18n="tasks:index.items.taskName">Task</th>
+                            <th data-i18n="tasks:index.items.category">Category</th>
+                            <th data-i18n="tasks:index.items.interval">Interval</th>
+                            <th data-i18n="tasks:index.items.info">Information</th>
+                    <!-- Edit / Delete -->
+                            <th class="border-bottom-0"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                <!-- ToDo: Serialization missing -->
+                        {% for dict in taskList %}
+                            <tr data-task-id="{{ dict.id }}" data-deadline="{{ dict.deadline }}">
+                                <td data-role="btn-completion">
+                                    <button class="btn btn-sm btn-success">
+                                        <i class="bi bi-check2-circle"></i>
+                                    </button>
+                                    <p id="completionBtnError{{ dict.id }}" class="error"></p>
+                                </td>
+                                <td data-role="deadline">
+                                    {{ dict.deadline }}
+                                </td>
+                                <td data-role="taskName">
+                                    {{ dict.task_name }}
+                                </td>
+                                <td data-i18n="tasks:{{ dict.category }}" data-role="category">
+                                    {{ dict.category }}
+                                </td>
+                                <td data-i18n="tasks:{{ dict.interval }}" data-role="interval">
+                                    {{ dict.interval }}
+                                </td>
+                                <td data-role="info">
+                                    {{ dict.info }}
+                                </td>
+                                <td data-role="btn-change">
+                                    <button class="btn btn-sm btn-primary" data-role="edit">
+                                        <i class="bi bi-pencil-square"></i>
+                                        <span data-i18n="common:edit">Edit</span>
+                                    </button>
+
+                                    <button class="btn btn-sm btn-danger" data-role="delete">
+                                        <i class="bi bi-trash"></i>
+                                        <span data-i18n="common:delete">Delete</span>
+                                    </button>
+                                </td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        {% endif %}
+    </div>
+
+    <div class="display-page pt-4 mt-4 table-responsive">
+        <h2 data-i18n="tasks:index.newItems" class="mb-4 font-red">Add a new Task</h2>
+
+        <form id="createTask" action="/tasks" method="post">
+            <table class="table table-borderless border-0">
+                <thead>
+                    <tr class="border-bottom">
+                        <th data-i18n="tasks:index.items.taskName">Task</th>
+                        <th data-i18n="tasks:index.items.category">Category</th>
+                        <th data-i18n="tasks:index.items.interval">Interval</th>
+                        <th data-i18n="tasks:index.items.startDate">Start Date</th>
+                        <th data-i18n="tasks:index.items.info">Information</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <input type="text" name="taskName" id="newTaskName" autocomplete="off" class="form-control" required>
+                            <p id="taskNameError" class="error"></p>
+                        </td>
+                        <td>
+                            <select id="newTaskCategory" name="taskCategory" class="form-control" required>
+                                <option value="" selected disabled>---</option>
+
+                            <!-- ToDo: Serialization missing -->
+                                {% for dict in selectOptions %}
+                                    {% if dict["dropdown_name"] == "taskCategory" %}
+                                        <option value="{{ dict.i18n }}" data-i18n="tasks:{{ dict.i18n }}">{{ dict.display_text }}</option>
+                                    {% endif %}
+                                {% endfor %}
+
+                            </select>
+                            <p id="taskCategoryError" class="error"></p>
+                        </td>
+                        <td>
+                            <select id="newTaskInterval" name="taskInterval" class="form-control" required>
+                                <option value="" selected disabled>---</option>
+
+                            <!-- ToDo: Serialization missing -->
+                                {% for dict in selectOptions %}
+                                    {% if dict["dropdown_name"] == "taskInterval" %}
+                                        <option value="{{ dict.i18n }}" data-i18n="tasks:{{ dict.i18n }}">{{ dict.display_text }}</option>
+                                    {% endif %}
+                                {% endfor %}
+
+                            </select>
+                            <p id="taskIntervalError" class="error"></p>
+                        </td>
+                        <td>
+                        <!-- ToDo: Needs Adjustment for timzeones, reference timezone, +1 day if hours of day between 22~24 -->
+                            <input type="date" name="startDate" id="setStartDate" class="form-control" required>
+                            <p id="taskDateError" class="error"></p>
+                        </td>
+                        <td>
+                            <textarea name="newItemInfo" class="form-control"></textarea>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p id="generalErrorMessage" class="error"></p>
+            <button type="submit" data-i18n="common:submit">Submit</button>
+        </form>
+    </div>
+
+<!-- Add JS & AJAX script for planner -->
+    <script src="{{ url_for('static', filename='js/planner.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/ajax.js') }}"></script>
+
+{% endblock %}

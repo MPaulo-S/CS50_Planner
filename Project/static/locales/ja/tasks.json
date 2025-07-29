@@ -1,0 +1,27 @@
+{
+  "index": {
+    "title": "スケジューラー",
+    "upcomingItems": "今後の用事",
+    "newItems": "新規用事",
+    "items": {
+      "taskName": "用事名",
+      "category": "分類",
+      "interval": "間隔",
+      "startDate": "開始日付",
+      "dueDate": "期日",
+      "info": "詳細情報"
+    }
+  },
+  "selectOption": {
+    "birthday": "誕生日",
+    "regular": "規則",
+    "irregular": "不規則",
+    "daily": "毎日",
+    "weekly": "毎週",
+    "biWeekly": "隔週",
+    "monthly": "毎月",
+    "yearly": "毎年",
+    "custom": "カスタム選択",
+    "oneOff": "再発なし"
+  }
+}

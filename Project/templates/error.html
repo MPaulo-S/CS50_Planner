@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block main %}
+    <div class="display-page">
+        <h1>
+            <span data-i18n="common:errorTitle"></span>
+            <span>{{ error_code }}</span>
+        </h1>
+
+        <p data-i18n="common:error.message.{{ error_message }}"></p>
+        <a href="/" data-i18n="common:returnLink" id="returnLink"></a>
+    </div>
+
+    <script>
+    // Refer back to the previous page, fallback '/'
+        const referrer = document.referrer;
+        if (referrer) {
+            document.getElementById('returnLink').href = referrer;
+        }
+    </script>
+
+{% endblock %}

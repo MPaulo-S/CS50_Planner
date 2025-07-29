@@ -1,0 +1,71 @@
+{
+  "lang_en": "English",
+  "lang_ja": "日本語",
+  "lang_de": "Deutsch",
+  "nav_logout": "Logout",
+  "nav_login": "Login",
+  "nav_register": "Register",
+  "title": {
+    "default": "Planner",
+    "index": "Overview",
+    "error": "Error",
+    "login": "Login",
+    "register": "Register"
+  },
+  "header_title": "(Un)regularily Recurring Tasks",
+  "returnLink": "Go back",
+  "submit": "Submit",
+  "session": {
+    "loginTitle": "Login",
+    "registerTitle": "Register new Account",
+    "enterUserName": "Enter your username",
+    "usernamePlaceholder": "Username",
+    "password": "Enter password",
+    "passwordPlaceholder": "Password",
+    "passwordConfirmation": "Confirm Password"
+  },
+  "errorTitle": "Error",
+  "error": {
+    "message": {
+      "404": "Cannot find page",
+      "500": "There was an internal server problem",
+      "missingUsername": "Username missing",
+      "missingPassword": "Password missing",
+      "differentPassword": "Passwords do not match",
+      "existingUsername": "Username already exists",
+      "wrongUsernamePassword": "Username or password were wrong.",
+      "missingTaskName": "Task name missing",
+      "duplicateTask": "Task name already exists",
+      "missingCategory": "Category selection missing",
+      "wrongCategory": "Category does not exist",
+      "missingInterval": "Interval selection missing",
+      "wrongInterval": "Interval does not exist",
+      "wrongDateFormat": "Date format missmatch",
+      "missingDate": "Date selection missing"
+    }
+  },
+  "index": {
+    "title": "Planner",
+    "upcomingItems": "Upcoming Tasks",
+    "newItems": "Add new Task",
+    "newItem": {
+      "taskName": "Task",
+      "category": "Category",
+      "interval": "Interval",
+      "start": "Start Date",
+      "info": "Details"
+    }
+  },
+  "selectOption": {
+    "birthday": "Birthday",
+    "regular": "Regular",
+    "irregular": "Irregular",
+    "daily": "Daily",
+    "weekly": "Weekly",
+    "biWeekly": "Bi-Weekly",
+    "monthly": "Monthly",
+    "yearly": "Yearly",
+    "custom": "Custom",
+    "oneOff": "No Recurrence"
+  }
+}

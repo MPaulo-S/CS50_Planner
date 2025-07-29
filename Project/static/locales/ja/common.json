@@ -1,0 +1,54 @@
+{
+  "lang_en": "English",
+  "lang_ja": "日本語",
+  "lang_de": "Deutsch",
+  "nav_logout": "ログアウト",
+  "nav_login": "ログイン",
+  "nav_register": "新規登録",
+  "title": {
+    "default": "Planner",
+    "index": "概要",
+    "error": "エラー",
+    "login": "ログイン",
+    "register": "新規登録"
+  },
+  "header_title": "規則・不規則に繰り返される用事",
+  "returnLink": "ページに戻る",
+  "submit": "送信",
+  "session": {
+    "loginTitle": "ログイン",
+    "registerTitle": "新規登録",
+    "enterUserName": "ユーザー名を入力",
+    "usernamePlaceholder": "ユーザー名 ",
+    "password": "パスワードを入力",
+    "passwordPlaceholder": "パスワード",
+    "passwordConfirmation": "パスワードを再入力"
+  },
+  "errorTitle": "エラー",
+  "error": {
+    "message": {
+      "404": "ページが見つかりませんでした",
+      "500": "サーバーエラーが発生しました",
+      "dataReturnError": "データエラー、ページを再読み込みしてください",
+      "databaseError": "サーバーエラー、ページを再読み込みしてください",
+      "missingUsername": "ユーザー名が入力されていません",
+      "missingPassword": "パスワードが入力されていません",
+      "differentPassword": "パスワードが間違っています",
+      "existingUsername": "既にユーザー名が使用されています",
+      "wrongUsernamePassword": "ユーザー名またはパスワードが正しく入力していません",
+      "missingTaskName": "用事名が入力されていません",
+      "duplicateTask": "用事名が既存されています",
+      "missingCategory": "分類が選択されていません",
+      "wrongCategory": "分類が既存されていません",
+      "missingInterval": "間隔が選択されていません",
+      "wrongInterval": "間隔が既存されていません",
+      "missingDate": "日付が選択されていません",
+      "wrongDateFormat": "日付の書式間違い",
+      "tempBirthday": "誕生日は一週間以上かかって、「編集」通じて合わせて下さい"
+    }
+  },
+  "edit": "編集",
+  "discard": "破棄",
+  "complete": "完了",
+  "delete": "削除"
+}

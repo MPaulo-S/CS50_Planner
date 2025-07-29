@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block main %}
+    <div class="display-page">
+        <h1 data-i18n="common:session.loginTitle">Login</h1>
+
+        <form action="/login" method="post">
+
+        <!-- Username -->
+            <div class="login-group w-25">
+                <p data-i18n="common:session.enterUserName"></p>
+                <input class="form-control" autofocus name="placeholderUsername" id="loginUsername" placeholder="" type="text">
+            </div>
+
+        <!-- Password -->
+            <div class="login-group w-25">
+                <p data-i18n="common:session.password"></p>
+                <input type="password" class="form-control" autocomplete="off" name="placeholderPassword" id="loginPassword" placeholder="" type="text">
+            </div>
+
+            <div class="login-group">
+                <button data-i18n="common:submit" type="submit"></button>
+            </div>
+        </form>
+    </div>
+
+{% endblock %}

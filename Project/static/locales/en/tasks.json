@@ -1,0 +1,27 @@
+{
+  "index": {
+    "title": "Planner",
+    "upcomingItems": "Upcoming Tasks",
+    "newItems": "Add new Task",
+    "items": {
+      "taskName": "Task",
+      "category": "Category",
+      "interval": "Interval",
+      "startDate": "Start Date",
+      "dueDate": "Appointed Date",
+      "info": "Details"
+    }
+  },
+  "selectOption": {
+    "birthday": "Birthday",
+    "regular": "Regular",
+    "irregular": "Irregular",
+    "daily": "Daily",
+    "weekly": "Weekly",
+    "biWeekly": "Bi-Weekly",
+    "monthly": "Monthly",
+    "yearly": "Yearly",
+    "custom": "Custom",
+    "oneOff": "No Recurrence"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "lang_en": "English",
+  "lang_ja": "日本語",
+  "lang_de": "Deutsch",
+  "nav_logout": "Logout",
+  "nav_login": "Login",
+  "nav_register": "Registrieren",
+  "title": {
+    "default": "Planer",
+    "index": "Übersicht",
+    "error": "Fehler",
+    "login": "Login",
+    "register": "Registrierung"
+  },
+  "header_title": "(Un)regelmässig wiederholende Tasks",
+  "returnLink": "Zurück",
+  "submit": "Senden",
+  "session": {
+    "loginTitle": "Login",
+    "registerTitle": "Neuen Account erstellen",
+    "enterUserName": "Geben Sie ihren Nutzernamen ein:",
+    "usernamePlaceholder": "Nutzername",
+    "password": "Geben Sie ihr Passwort ein:",
+    "passwordPlaceholder": "Passwort",
+    "passwordConfirmation": "Bestätigen Sie ihr Passwort:"
+  },
+  "errorTitle": "Fehler",
+  "error": {
+    "message": {
+      "404": "Die Seite konnte nicht gefunden werden.",
+      "500": "Ein Serverfehler ist aufgetreten",
+      "dataReturnError": "Datenfehler, bitte Seite neu laden",
+      "databaseError": "Serverfehler, bitte Seite neu laden",
+      "missingUsername": "Nutzername fehlt",
+      "missingPassword": "Passwort fehlt",
+      "differentPassword": "Passwörter sind nicht identisch",
+      "existingUsername": "Nutzername ist bereits vergeben",
+      "wrongUsernamePassword": "Nutzername oder Password wurden falsch eingegeben",
+      "missingTaskName": "Aufgabentitel fehlt",
+      "duplicateTask": "Aufgabennamen bereits in Verwendung",
+      "missingCategory": "Aufgabentyp fehlt",
+      "wrongCategory": "Kein passender Aufgabentyp gefunden",
+      "missingInterval": "Intervall fehlt",
+      "wrongInterval": "Kein passendes Intervall gefunden",
+      "missingDate": "Datumseingabe fehlt",
+      "wrongDateFormat": "Unpassendes Datumsformat",
+      "tempBirthday": "Datum mehr als 1 Woche entfernt, bitte via 'Bearbeiten' anpassen"
+    }
+  },
+  "edit": "Bearbeiten",
+  "discard": "Verwerfen",
+  "complete": "Erledigt",
+  "delete": "Löschen"
+}

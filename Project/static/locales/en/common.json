@@ -1,0 +1,54 @@
+{
+  "lang_en": "English",
+  "lang_ja": "日本語",
+  "lang_de": "Deutsch",
+  "nav_logout": "Logout",
+  "nav_login": "Login",
+  "nav_register": "Register",
+  "title": {
+    "default": "Planner",
+    "index": "Overview",
+    "error": "Error",
+    "login": "Login",
+    "register": "Register"
+  },
+  "header_title": "(Un)regularily Recurring Tasks",
+  "returnLink": "Go back",
+  "submit": "Submit",
+  "session": {
+    "loginTitle": "Login",
+    "registerTitle": "Register new Account",
+    "enterUserName": "Enter your username",
+    "usernamePlaceholder": "Username",
+    "password": "Enter password",
+    "passwordPlaceholder": "Password",
+    "passwordConfirmation": "Confirm Password"
+  },
+  "errorTitle": "Error",
+  "error": {
+    "message": {
+      "404": "Cannot find page",
+      "500": "There was an internal server problem",
+      "dataReturnError": "Data error, please reload page",
+      "databaseError": "Server error, please reload page",
+      "missingUsername": "Username missing",
+      "missingPassword": "Password missing",
+      "differentPassword": "Passwords do not match",
+      "existingUsername": "Username already exists",
+      "wrongUsernamePassword": "Username or password were wrong.",
+      "missingTaskName": "Task name required",
+      "duplicateTask": "Task name already exists",
+      "missingCategory": "Category selection missing",
+      "wrongCategory": "Category does not exist",
+      "missingInterval": "Interval selection missing",
+      "wrongInterval": "Interval does not exist",
+      "missingDate": "Date selection missing",
+      "wrongDateFormat": "Date format missmatch",
+      "tempBirthday": "Date more than 1 week away. Adapt via 'Edit' button"
+    }
+  },
+  "edit": "Edit",
+  "discard": "Discard",
+  "complete": "Complete",
+  "delete": "Delete"
+}

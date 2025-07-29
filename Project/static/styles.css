@@ -1,0 +1,90 @@
+/* Setting general website stye */
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    /* background: #f9f9f7; */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* General settings */
+.width-80 {
+    width: 80%;
+}
+
+.font-red {
+    color: #b03a2e;
+}
+
+/* Error, Login, Sign-up page styling, ChatGPT generated error format, developer-side adapted */
+.display-page {
+    text-align: center;
+    padding: 5% 10%;
+    /* background-image: url('/static/pattern.png'); optional: subtle pattern */
+    background-size: cover;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+
+.display-page h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #b03a2e;
+    /* traditional red tone */
+}
+
+.display-page p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    color: #444;
+}
+
+.display-page a,
+button {
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #1565c0;
+    background-color: #ebf3fd;
+    border: 1px solid #1565c0;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.display-page a:hover,
+button:hover {
+    background-color: #1565c0;
+    color: #fff;
+}
+
+/* Login page */
+.login-group {
+    width: 80%;
+    margin: 1rem auto;
+}
+
+.login-group p {
+    margin-bottom: 0.25rem;
+    font-size: 1.1rem;
+    text-align: left;
+}
+
+.form-control {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Task page - Error text */
+.display-page p.error {
+    color: #dc3545;
+    font-size: 0.8rem;
+    text-align: left;
+}
+
+error-group {
+    width: 90%;
+    margin: 0.1rem auto;
+}

@@ -1,0 +1,27 @@
+{
+  "index": {
+    "title": "Planer",
+    "upcomingItems": "Anstehende Aufgaben",
+    "newItems": "Neue Aufgabe hinzufügen",
+    "items": {
+      "taskName": "Aufgabe",
+      "category": "Kategorie",
+      "interval": "Intervall",
+      "startDate": "Beginn",
+      "dueDate": "Vormerktermin",
+      "info": "Details"
+    }
+  },
+  "selectOption": {
+    "birthday": "Geburtstag",
+    "regular": "Regelmässig",
+    "irregular": "Unregelmässig",
+    "daily": "Täglich",
+    "weekly": "Wöchentlich",
+    "biWeekly": "Alle 2 Wochen",
+    "monthly": "Monatlich",
+    "yearly": "Jährlich",
+    "custom": "Selbstdefiniert",
+    "oneOff": "Einmalig"
+  }
+}

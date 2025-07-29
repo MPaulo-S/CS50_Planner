@@ -1,0 +1,70 @@
+{
+  "lang_en": "English",
+  "lang_ja": "日本語",
+  "lang_de": "Deutsch",
+  "nav_logout": "Logout",
+  "nav_login": "Login",
+  "nav_register": "Registrieren",
+  "title": {
+    "default": "Planer",
+    "index": "Übersicht",
+    "error": "Fehler",
+    "login": "Login",
+    "register": "Registrierung"
+  },
+  "header_title": "(Un)regelmässig wiederholende Tasks",
+  "returnLink": "Zurück",
+  "submit": "Senden",
+  "session": {
+    "loginTitle": "Login",
+    "registerTitle": "Neuen Account erstellen",
+    "enterUserName": "Geben Sie ihren Nutzernamen ein:",
+    "usernamePlaceholder": "Nutername",
+    "password": "Geben Sie ihr Passwort ein:",
+    "passwordPlaceholder": "Passwort",
+    "passwordConfirmation": "Bestätigen Sie ihr Passwort:"
+  },
+  "errorTitle": "Fehler",
+  "error": {
+    "message": {
+      "404": "Die Seite konnte nicht gefunden werden.",
+      "500": "Ein Serverfehler ist aufgetreten",
+      "missingUsername": "Nutzername fehlt",
+      "missingPassword": "Passwort fehlt",
+      "differentPassword": "Passwörter sind nicht identisch",
+      "existingUsername": "Nutzername ist bereits vergeben",
+      "wrongUsernamePassword": "Nutzername oder Password wurden falsch eingegeben",
+      "missingTaskName": "Aufgabentitel fehlt",
+      "duplicateTask": "Aufgabennamen bereits in Verwendung",
+      "missingCategory": "Aufgabentyp fehlt",
+      "wrongCategory": "Kein passender Aufgabentyp gefunden",
+      "missingInterval": "Intervall fehlt",
+      "wrongDateFormat": "Unpassendes Datumsformat",
+      "wrongInterval": "Kein passendes Intervall gefunden"
+    }
+  },
+  "index": {
+    "title": "Planer",
+    "upcomingItems": "Anstehende Aufgaben",
+    "newItems": "Neue Aufgabe hinzufügen",
+    "newItem": {
+      "taskName": "Aufgabe",
+      "category": "Kategorie",
+      "interval": "Intervall",
+      "start": "Beginn",
+      "info": "Details"
+    }
+  },
+  "selectOption": {
+    "birthday": "Geburtstag",
+    "regular": "Regelmässig",
+    "irregular": "Unregelmässig",
+    "daily": "Täglich",
+    "weekly": "Wöchentlich",
+    "biWeekly": "Alle 2 Wochen",
+    "monthly": "Monatlich",
+    "yearly": "Jährlich",
+    "custom": "Selbstdefiniert",
+    "oneOff": "Einmalig"
+  }
+}
