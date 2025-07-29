@@ -1,0 +1,75 @@
+🎥🖥️✨ Log of the Used SQL Commands
+
+🖥️📐🖌️ Creating a SQL DB
+
+code planner.db
+
+sqlite3 planner.db  # Seems a little to easy but let's try
+
+
+🖥️📐🖌️ Creating user table
+
+CREATE TABLE users (
+       id INTEGER PRIMARY KEY AUTOINCREMENT,
+     user TEXT NOT NULL UNIQUE,
+ password TEXT NOT NULL DEFAULT 123456789
+);
+
+
+📊🖌️🖼️ Manual User Creation (Checking purpose)
+
+INSERT INTO users (user) VALUES ('AAA');
+
+SELECT * FROM users;
+
+
+🖥️📐🖌️ Creation Drop Down Content Table (<select><option>)
+
+CREATE TABLE select_options (
+             id INTEGER PRIMARY KEY AUTOINCREMENT,
+  dropdown_name TEXT NOT NULL,
+      opt_group TEXT,
+   option_value TEXT NOT NULL,
+           i18n TEXT NOT NULL,
+   display_text TEXT
+);
+
+📊🖌️🖼️ Populate Dropdown Table Input
+
+Task Category
+
+INSERT into select_options (dropdown_name, option_value, i18n, display_text) VALUES ('taskCategory', 'birthday', 'selectOption.birthday', 'Birthday');
+INSERT into select_options (dropdown_name, option_value, i18n, display_text) VALUES ('taskCategory', 'regular', 'selectOption.regular', 'Regular');
+INSERT into select_options (dropdown_name, option_value, i18n, display_text) VALUES ('taskCategory', 'irregular', 'selectOption.irregular', 'Irregular');
+
+Task Interval
+
+INSERT into select_options (dropdown_name, option_value, i18n, display_text) VALUES ('taskInterval', '1', 'selectOption.daily', 'Daily');
+INSERT into select_options (dropdown_name, option_value, i18n, display_text) VALUES ('taskInterval', '7', 'selectOption.weekly', 'Weekly');
+INSERT into select_options (dropdown_name, option_value, i18n, display_text) VALUES ('taskInterval', '14', 'selectOption.biWeekly', 'Bi-Weekly');
+INSERT into select_options (dropdown_name, option_value, i18n, display_text) VALUES ('taskInterval', '30', 'selectOption.monthly', 'Monthly (30 days)');
+INSERT into select_options (dropdown_name, option_value, i18n, display_text) VALUES ('taskInterval', 'year', 'selectOption.yearly', 'Yearly');
+INSERT into select_options (dropdown_name, option_value, i18n, display_text) VALUES ('taskInterval', 'custom', 'selectOption.custom', 'Select new recurrence date');
+INSERT into select_options (dropdown_name, option_value, i18n, display_text) VALUES ('taskInterval', 'oneOff', 'selectOption.oneOff', 'No Recurrence');
+
+
+🖥️📐🖌️ Create the Task Table
+
+CREATE TABLE tasks (
+                 id INTEGER PRIMARY KEY AUTOINCREMENT,
+            user_id INTEGER NOT NULL,
+          task_name TEXT NOT NULL,
+           category TEXT NOT NULL,
+           interval TEXT NOT NULL,
+  interval_addition TEXT DEFAULT NULL,
+           deadline DATE NOT NULL,
+               info LONGTEXT,
+  FOREIGN KEY (user_id) REFERENCES users(id)
+);
+
+
+Some Corrections in DB entries
+
+UPDATE tasks SET user_id = 4 WHERE id in (1, 2);
+
+📜📖📝 Note: Using the interval_addition here probably leads to an adaption of the select_options table
